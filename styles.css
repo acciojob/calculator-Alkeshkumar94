@@ -1,2 +1,39 @@
 
 /* Your CSS Code here. */
+*{
+	box-sizing:border-box;
+	font-size:30px;
+	
+}
+#display{
+	position:relative;
+}
+input{
+	position:absolute;
+	border:none;
+	height:100%;
+	outline:none;
+	width:100%
+}
+#calc{
+	border:1px solid black;
+	height:600px;
+	width:400px;
+	display:flex;
+	flex-direction:column;
+}
+#display{
+	height:100px;
+}
+#numbers{
+	flex-grow:1;
+	display:grid;
+	height:200px;
+  grid-template-columns: repeat(4, 1fr);
+}
+#numbers div{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px solid ;
+}
